@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head> 
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8"> 
+<title>Array methodes</title>
+</head>
+<body> 
+<script> 
+    var testarray = new Array(
+        'een', 'twee', 3, 'vier'
+    );
+    testarray[4] = 5;
+    console.log (
+        "testarray: " + testarray
+    )
+    console.log (
+        "Datatype is: " + typeof testarray[4]
+    )
+    testarray.pop();
+    console.log (
+        "testarray: " + testarray
+    )
+    testarray.unshift("nul");
+    console.log (
+        "testarray: " + testarray
+    )
+    delete testarray[0];
+    console.log (
+    "Datatype is: " + typeof testarray[0]
+    )
+    console.log (
+        "testarray: " + testarray
+    )
+    delete testarray[2];
+    console.log (
+        "testarray: " + testarray
+    )
+    delete testarray[4];
+    console.log (
+        "testarray: " + testarray
+    )
+</script>
+</body>
+</html>
